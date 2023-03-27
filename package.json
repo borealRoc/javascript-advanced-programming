@@ -1,0 +1,23 @@
+{
+  "name": "javascript-advanced-programming",
+  "version": "1.0.0",
+  "description": "Javascript 高级程序设计",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealRoc/javascript-advanced-programming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borealRoc/javascript-advanced-programming/issues"
+  },
+  "homepage": "https://github.com/borealRoc/javascript-advanced-programming#readme",
+  "devDependencies": {
+    "vite": "3.0.7"
+  }
+}
