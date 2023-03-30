@@ -3,4 +3,5 @@
 // import './ECStack/clouse-apply'
 
 // import "./OOP/object/test";
-import './OOP/function/test'
+// import './OOP/function/test'
+import './OOP/prototype/test'
