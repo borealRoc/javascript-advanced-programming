@@ -2,4 +2,5 @@
 // import './ECStack/closure-click'
 // import './ECStack/clouse-apply'
 
-import "./OOP/object/test";
+// import "./OOP/object/test";
+import './OOP/function/test'
