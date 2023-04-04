@@ -39,25 +39,26 @@ function f2() {
 
 // 3. 发布/订阅
 // 优点：这种方法的性质与"事件监听"类似，但因为有统一的任务中心进行管理，所以流程比较清晰
-// import EventEmitter from "../common/event-emitter";
-// function f1() {
-//   setTimeout(function () {
-//     for (let i = 0; i < 1000000000; i++) {}
-//     console.log("f1执行完毕");
-//     EventEmitter.emit("done");
-//   });
-// }
-// EventEmitter.on("done", f2);
-// f1();
-// console.log("一些同步的代码");
-
-// 4. Promise
-const f1 = new Promise((res, rej) => {
+import { PubSub } from "../design-mode/publish-subscribe-mode";
+const eventEmitter = new PubSub();
+function f1() {
   setTimeout(function () {
     for (let i = 0; i < 1000000000; i++) {}
     console.log("f1执行完毕");
-    res();
+    eventEmitter.publish("done");
   });
-});
-f1.then(f2);
+}
+eventEmitter.subscribe("done", f2);
+f1();
 console.log("一些同步的代码");
+
+// 4. Promise
+// const f1 = new Promise((res, rej) => {
+//   setTimeout(function () {
+//     for (let i = 0; i < 1000000000; i++) {}
+//     console.log("f1执行完毕");
+//     res();
+//   });
+// });
+// f1.then(f2);
+// console.log("一些同步的代码");
