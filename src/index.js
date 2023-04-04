@@ -6,4 +6,6 @@
 // import './OOP/function/test'
 // import './OOP/prototype/test'
 
-import './async/async-programming'
+// import './async/async-programming'
+
+import './design-mode/test'
