@@ -4,7 +4,8 @@
   "description": "Javascript 高级程序设计",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "test": "promises-aplus-tests ./src/async/my-promise"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/borealRoc/javascript-advanced-programming#readme",
   "devDependencies": {
+    "promises-aplus-tests": "^2.1.2",
     "vite": "3.0.7"
   }
 }

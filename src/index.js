@@ -8,6 +8,6 @@
 
 // import './async/async-programming'
 
-import './module/test'
+// import './module/test'
 
-// import './design-mode/test'
+import './design-mode/test'
